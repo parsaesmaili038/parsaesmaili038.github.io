@@ -206,7 +206,7 @@ h1, h2 {
     backdrop-filter: var(--blur);
     -webkit-backdrop-filter: var(--blur);
     box-shadow: var(--shadow-main);
-    text-align: justify;
+    text-align: start;
     overflow: hidden;
     transition: transform 0.4s ease, border-color 0.4s ease;
 }
@@ -332,6 +332,7 @@ h1, h2 {
 
     .quote {
         position: relative;
+    } 
     /* quote */
     .quote::before,
     .quote::after {
@@ -516,12 +517,14 @@ h1, h2 {
     <div class="content-box">
         <p>تکامل جادو نیست؛ فیلتر است. هر احساسی که داریم، برای زنده ماندن بوده.</p>
 
-        <div class="hexagon-visual-container">
-            <div class="hexagon-visual"></div>
-        </div>
+                  .hexagon-visual-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
         <p class="caption">(ساختار مولکولی دوپامین)</p>
 
-        <p>دوپامین انسان را رام می‌کند. اگر انسان میلی به جفت‌گیری نداشت، نسلش تمام می‌شد. عشق و لذت، هر دو ابزار بودند.</p>
+        <p>دوپامین انسان را رام می‌کند. عشق و لذت، هر دو ابزار بودند.</p>
 
         <!-- اینجا تصویر مربوط به ساختار مولکولی دوپامین قرار می‌گیرد -->
         <div class="image-container">
